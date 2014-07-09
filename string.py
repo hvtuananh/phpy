@@ -12,3 +12,6 @@ def implode(glue, pieces):
 
 def join(glue, pieces):
     return implode(glue, pieces)
+    
+def strlen(string):
+    return len(string)
