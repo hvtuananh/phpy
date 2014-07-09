@@ -1,6 +1,3 @@
-def implode(glue, pieces):
-    return str(glue).join(map(str, pieces))
-
 def explode(delimiter, string, limit = None):
     if limit is None:
         return string.split(delimiter)
@@ -10,3 +7,8 @@ def explode(delimiter, string, limit = None):
         else:
             return string.split(delimiter, limit)
             
+def implode(glue, pieces):
+    return str(glue).join(map(str, pieces))
+
+def join(glue, pieces):
+    return implode(glue, pieces)
