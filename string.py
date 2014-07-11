@@ -1,3 +1,6 @@
+def echo(string):
+    print string
+
 def explode(delimiter, string, limit = None):
     if limit is None:
         return string.split(delimiter)
